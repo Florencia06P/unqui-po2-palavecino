@@ -15,7 +15,7 @@ class MultioperadorTestCase {
 	* @throws Exception
 	*/
 	@BeforeEach
-	public void setUp() throws Exception {
+	public void setUp() throws Exception  {
 	//Se crea el contador
 	operador = new Multioperador();
 	

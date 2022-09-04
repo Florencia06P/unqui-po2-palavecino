@@ -24,6 +24,7 @@ public class Multioperador {
 			
 		}
 		return resta;
+		
 	}
 	
 	public int multiplicacion() {
