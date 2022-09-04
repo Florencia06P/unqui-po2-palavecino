@@ -15,7 +15,7 @@ public class Multioperador {
 		return sumatoria;
 	}
 
-	public int resta() {
+	public int resta(){
 
 		int resta = 0;
 

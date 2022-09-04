@@ -8,6 +8,7 @@ class MultioperadorTestCase {
 
 	private Multioperador operador;
 	
+	
 	/**
 	* Crea un escenario de test básico, que consiste en un contador
 	* con 10 enteros
