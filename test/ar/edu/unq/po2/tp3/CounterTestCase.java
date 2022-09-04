@@ -1,8 +1,8 @@
 package ar.edu.unq.po2.tp3;
 
 import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.BeforeEach;
 
 class CounterTestCase {
 
@@ -36,14 +36,14 @@ class CounterTestCase {
 	@Test
 	public void testEvenNumbers() {
 	// Getting the even occurrences
-	int amount = counter.getEvenOcurrences();
+	int amount = counter.cantidadDeMultiplos(2);
 	// I check the amount is the expected one
-	assertEquals(amount, 9);
+	assertEquals(amount, 1);
 	}
-	}
+	
 	@Test
 	void test() {
-		fail("Not yet implemented");
+	//	fail("Not yet implemented");
 	}
 
 }
