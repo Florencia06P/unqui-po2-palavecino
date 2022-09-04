@@ -10,6 +10,7 @@ public class Counter {
 
 	public int[] getNumeros() {
 		return numeros;
+		
 	}
 
 	public void setNumeros(int[] numeros) {
