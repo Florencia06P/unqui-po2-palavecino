@@ -15,6 +15,6 @@ public class Counter {
 
 	public void setNumeros(int[] numeros) {
 		this.numeros = numeros;
-		
+
 	}
 }
