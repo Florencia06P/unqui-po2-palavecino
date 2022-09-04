@@ -10,7 +10,7 @@ public class Multioperador {
 		int sumatoria = 0;
 
 		for (int i = 0; i < numeros.size(); i++) {
-			sumatoria  = sumatoria + numeros.get(i);
+			sumatoria = sumatoria + numeros.get(i);
 		}
 		return sumatoria;
 	}
