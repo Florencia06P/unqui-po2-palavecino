@@ -18,7 +18,7 @@ public class Multioperador {
 	public int resta(){
 
 		int resta = 0;
-
+		
 		for (int i = 0; i < numeros.size(); i++) {
 			resta = resta - numeros.get(i);
 			

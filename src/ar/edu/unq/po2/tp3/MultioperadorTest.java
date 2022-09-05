@@ -38,9 +38,9 @@ class MultioperadorTestCase {
 	@Test
 	public void testEvenNumbers() {
 	// Getting the even occurrences
-	int amount = operador.multiplicacion();
+	int amount = operador.resta();
 	// I check the amount is the expected one
-	assertEquals(amount, 3780);
+	assertEquals(amount, -33);
 	}
 	
 	@Test
