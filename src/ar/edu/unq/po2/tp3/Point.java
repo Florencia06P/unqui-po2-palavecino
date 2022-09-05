@@ -24,4 +24,7 @@ public class Point {
 		return punto;
 	}
 	
+	
+	
+	
 }

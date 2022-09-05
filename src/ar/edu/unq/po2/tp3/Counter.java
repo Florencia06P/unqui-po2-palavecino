@@ -48,7 +48,7 @@ public class Counter {
 		return impares;
 	}
 
-	public int cantidadDeMultiplos(int numero) {
+	public int cantidadDeMultiplos(int numero){
 		int multiplos = 0;
 		for (int i = 0; i < numeros.size(); i++) {
 			if (numeros.get(i) % numero == 0) {

@@ -20,7 +20,7 @@ class MultioperadorTestCase {
 	//Se crea el contador
 	operador = new Multioperador();
 	
-	//Se agregan los  numeros. Un solo par y nueve impares
+	//Se agregan los  numeros. Un solo par y nueve impares 
 	operador.addNumber(1);
 	operador.addNumber(3);
 	operador.addNumber(5);

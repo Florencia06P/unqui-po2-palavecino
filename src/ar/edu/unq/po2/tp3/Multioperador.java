@@ -27,7 +27,7 @@ public class Multioperador {
 		
 	}
 	
-	public int multiplicacion() {
+	public int multiplicacion(){
 		int multiplicacion = 1;
 
 		for (int i = 0; i < numeros.size(); i++) {
