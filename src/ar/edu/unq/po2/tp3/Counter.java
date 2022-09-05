@@ -1,9 +1,11 @@
 package ar.edu.unq.po2.tp3;
 
 import java.util.ArrayList;
-import java.util.List;
+//import java.util.List;
 
 public class Counter {
+	
+	
 	private ArrayList<Integer> numeros = new ArrayList<Integer>();
 
 	/**
@@ -11,6 +13,7 @@ public class Counter {
 	 */
 
 	public int cantidadDePares() {
+		
 		int pares = 0;
 
 		for (int i = 0; i < numeros.size(); i++) {
@@ -56,9 +59,9 @@ public class Counter {
 
 	}
 	
-	public static int numeroConMasPares(int [] numeros) {
+	/**public static int numeroConMasPares(int [] numeros) {
 		
-	}
+	}*/
 	
 	
 

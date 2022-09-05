@@ -32,6 +32,7 @@ class MultioperadorTestCase {
 	operador.addNumber(1);
 	operador.addNumber(4);
 	}
+	
 	/**
 	* Verifica la cantidad de pares
 	*/
