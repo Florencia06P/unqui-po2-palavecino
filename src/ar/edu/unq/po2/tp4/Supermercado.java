@@ -27,14 +27,15 @@ public class Supermercado {
 	}
 
 	public Double precioTotal() {
-		Double total;
-		for(Producto precio:productos) {
-			
+		Double total =0.0;
+		for(Producto producto:productos) {
+			total+= producto.getPrecio();
 		}
+		return total;
 	}
 	public Double getPrecioTotal() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return this.precioTotal();
 	}
 	
 	

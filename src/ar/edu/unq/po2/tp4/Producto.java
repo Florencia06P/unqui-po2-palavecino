@@ -8,27 +8,30 @@ public class Producto {
 	Double precio;
 	boolean esDelProgramaPreciosCuidados = false;
 	
-	public Producto(String string, double d) {
-		// TODO Auto-generated constructor stub
+	public Producto(String unNombre, double unPrecio) {
+		this.nombre= unNombre;
+		this.precio= unPrecio;
 	}
-	public Producto(String string, double d, boolean b) {
-		// TODO Auto-generated constructor stub
+	public Producto(String unNombre, double unPrecio, boolean unBoolean) {
+		this.nombre= unNombre;
+		this.precio= unPrecio;
+		this.esDelProgramaPreciosCuidados=unBoolean;
 	}
 	
 	public Object getNombre() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return nombre;
 	}
 	public Double getPrecio() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return precio;
 	}
-	public BooleanSupplier esPrecioCuidado() {
-		// TODO Auto-generated method stub
-		return null;
+	public boolean esPrecioCuidado() {
+		
+		return esDelProgramaPreciosCuidados;
 	}
-	public void aumentarPrecio(double d) {
-		// TODO Auto-generated method stub
+	public void aumentarPrecio(double aumento) {
+		precio= precio + aumento;
 		
 	}
 	
