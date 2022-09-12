@@ -1,6 +1,6 @@
 package ar.edu.unq.po2.tp4;
 
-import java.util.function.BooleanSupplier;
+
 
 public class Producto {
 	

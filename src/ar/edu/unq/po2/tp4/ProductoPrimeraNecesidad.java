@@ -1,14 +1,17 @@
 package ar.edu.unq.po2.tp4;
 
-public class ProductoPrimeraNecesidad {
+public class ProductoPrimeraNecesidad extends Producto{
 
-	public ProductoPrimeraNecesidad(String string, double d, boolean b) {
-		// TODO Auto-generated constructor stub
+	
+	public ProductoPrimeraNecesidad(String unNombre, double unPrecio, boolean unBoolean) {
+		this.nombre= unNombre;
+		this.precio= unPrecio;
+		this.esDelProgramaPreciosCuidados=unBoolean;
 	}
-
+	
 	public Double getPrecio() {
-		// TODO Auto-generated method stub
-		return null;
+		
+		return precio;
 	}
 
 }
