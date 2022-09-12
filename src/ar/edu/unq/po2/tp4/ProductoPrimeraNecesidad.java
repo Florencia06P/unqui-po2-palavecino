@@ -13,5 +13,9 @@ public class ProductoPrimeraNecesidad extends Producto{
 		
 		return precio;
 	}
+	
+	public void aplicarDescuento(double descuento) {
+		precio = precio * descuento;
+	}
 
 }
