@@ -14,7 +14,7 @@ public class Caja {
 	public Double montoTotalAPagar() {
 		Double montoTotal= 0.0;
 		for(Producto producto:productos) {
-			montoTotal+= producto.getPrecio();
+			montoTotal+= producto.getMontoAPagar();
 		}
 		return montoTotal;
 	}
