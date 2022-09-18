@@ -4,16 +4,16 @@ import java.util.ArrayList;
 
 public class Cliente  {
 	
-	ArrayList<Producto> productos = new ArrayList<Producto>();
+	ArrayList<ProductoMercadoCentral> productos = new ArrayList<ProductoMercadoCentral>();
 	
-	public void productosAComprar(Producto producto){
+	public void productosAComprar(ProductoMercadoCentral producto){
 		productos.add(producto);
 		
 	}
 	
 	public Double montoTotalAPagar() {
 		Double montoTotal= 0.0;
-		for(Producto producto:productos) {
+		for(ProductoMercadoCentral producto:productos) {
 			montoTotal+= producto.getPrecio();
 		}
 		return montoTotal;

@@ -1,12 +1,16 @@
 package ar.edu.unq.po2.tpinterfaces;
 
-public class ProductoDeCooperativa implements Producto{
-	Double precioBase;
+public class ProductoDeCooperativa extends Producto{
+	public ProductoDeCooperativa(String unNombre, double unPrecio) {
+		super(unNombre, unPrecio);
+		// TODO Auto-generated constructor stub
+	}
+
 	
 	@Override
-	public Double getMontoAPagar() {
+	public Double montoAPagar() {
 		
-		return precioBase - (precioBase *10/100);
+		return this.getPrecio() - (this.getPrecio() *10/100);
 	}
 
 }
