@@ -4,4 +4,6 @@ public enum Deporte {
 	
 	RUNNING,FUTBOL,BASKET,TENNIS,JABALINA;
 	 int complejidad;
+
+	
 }
