@@ -3,16 +3,16 @@ package ar.edu.unq.po2.tp6;
 public class Propiedad {
     String descripcion;
     String direccion;
-    float valorFiscal;
+    double valorFiscal;
     
     
-    public Propiedad(String descripcion, String direccion, float valorFiscal) {
+    public Propiedad(String descripcion, String direccion, double valorFiscal) {
 		
 		this.descripcion = descripcion;
 		this.direccion = direccion;
 		this.valorFiscal = valorFiscal;
 	}
-	public float getValorFiscal() {
+	public double getValorFiscal() {
         return valorFiscal;
     }
     public void setValorFiscal(float valorFiscal) {

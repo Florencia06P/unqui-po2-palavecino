@@ -16,12 +16,12 @@ class SolicitudCreditoTest {
 
 	@BeforeEach
 	public void setUp() throws Exception {
-		clienteSol = new Cliente("Sol", "Lopez", "calle siempreViva 123", 25, 50.000f, 600.000f);
-		clienteLuis = new Cliente("Luis", "Gonzalez", "calle Alcanfor 13", 54, 150.000f, 1800.000f);
-		propiedadPlaya= new Propiedad ("departamento de Playa", "MarAzul 321", 100.000f);
+		clienteSol = new Cliente("Sol", "Lopez", "calle siempreViva 123", 25, 50.000, 600.000);
+		clienteLuis = new Cliente("Luis", "Gonzalez", "calle Alcanfor 13", 54, 150.000, 1800.000);
+		propiedadPlaya= new Propiedad ("departamento de Playa", "MarAzul 321", 100.000);
 
-		solicitudPersonal = new SolicitudCreditoPersonal(clienteSol,125.500f,12);
-		solicitudHipotecaria = new SolicitudCreditoHipotecario(clienteSol,60.000f,12,propiedadPlaya);
+		solicitudPersonal = new SolicitudCreditoPersonal(clienteSol,125.500,12);
+		solicitudHipotecaria = new SolicitudCreditoHipotecario(clienteSol,60.000,12,propiedadPlaya);
 		bancoSanter = new Banco();
 		bancoSanter.agregarCliente(clienteSol);
 		bancoSanter.agregarCliente(clienteLuis);
@@ -39,8 +39,8 @@ class SolicitudCreditoTest {
 	@Test
 	void testBanco() {
 		
-		float montoADesembolsar = bancoSanter.montoTotalADesembolsar();
-		assertEquals(montoADesembolsar, 185.500f);
+		double montoADesembolsar = bancoSanter.montoTotalADesembolsar();
+		assertEquals(montoADesembolsar, 185.500);
 		//assertEquals(bancoSanter.clientes,ArrayList(clienteSol,clienteLuis));
 	}
 	

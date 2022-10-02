@@ -2,7 +2,7 @@ package ar.edu.unq.po2.tp6;
 
 public class SolicitudCreditoPersonal extends SolicitudCredito {
 	
-	public SolicitudCreditoPersonal(Cliente solicitante, float montoSolicitado, int plazoEnMeses) {
+	public SolicitudCreditoPersonal(Cliente solicitante, double montoSolicitado, int plazoEnMeses) {
 		
 		this.solicitante = solicitante;
 		this.montoSolicitado = montoSolicitado;

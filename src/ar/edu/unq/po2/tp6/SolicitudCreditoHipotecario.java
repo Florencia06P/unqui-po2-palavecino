@@ -4,7 +4,7 @@ public class SolicitudCreditoHipotecario extends SolicitudCredito {
 
 	Propiedad propiedadDeGarantia;
 
-	public SolicitudCreditoHipotecario(Cliente solicitante, float montoSolicitado, int plazoEnMeses,
+	public SolicitudCreditoHipotecario(Cliente solicitante, double montoSolicitado, int plazoEnMeses,
 			Propiedad propiedad) {
 
 		this.solicitante = solicitante;

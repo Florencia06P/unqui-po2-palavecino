@@ -2,7 +2,7 @@ package ar.edu.unq.po2.tp6;
 
 public abstract class SolicitudCredito {
 	Cliente solicitante;
-	float montoSolicitado;
+	double montoSolicitado;
 	int plazoEnMeses;
 	//float cantidadCuotas;
 	// float montoCuota;
@@ -14,12 +14,12 @@ public abstract class SolicitudCredito {
 
 	protected abstract boolean esAceptable();
 
-	public float montoCuota() {
+	public double montoCuota() {
 
 		return montoSolicitado / plazoEnMeses;
 	}
 
-	public float getMontoSolicitado() {
+	public double getMontoSolicitado() {
 		return montoSolicitado;
 	}
 
