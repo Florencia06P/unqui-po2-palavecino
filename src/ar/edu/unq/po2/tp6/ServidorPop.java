@@ -1,42 +1,52 @@
 package ar.edu.unq.po2.tp6;
 
-
 import java.util.ArrayList;
 import java.util.List;
 
-public class ServidorPop implements IServidorUno,IServidorDos{
+public class ServidorPop implements IServidorUno, IServidorDos {
 	public List<Correo> recibirNuevos(String user, String pass) {
 		List<Correo> retorno = new ArrayList<Correo>();
-	  //Verificar autenticidad de usuario.
-		//obtener emails Nuevos del usuario.
-		//asignar a retorno la lista de los nuevos e-mails.
+		// Verificar autenticidad de usuario.
+		
+		// obtener emails Nuevos del usuario.
+		retorno.add(correo(user, pass));
+		// asignar a retorno la lista de los nuevos e-mails.
 		return retorno;
 	}
 
+	private Correo correo(String user, String pass) {
+		Correo correo = new Correo(correo.getAsunto(),correo.getDestinatario(),correo.getCuerpo(), user, pass);
+
+		return correo;
+	}
+
 	public void conectar(String nombreUsuario, String passusuario) {
-	   //Verifica que el usuario sea valido y establece la conexion.
+		// Verifica que el usuario sea valido y establece la conexion.
+		nombreUsuario = ClienteEMail.getNombreUsuario();
+		passusuario = ClienteEMail.getPassusuario();
 		
+
 	}
 
 	public void enviar(Correo correo) {
-      //realiza lo necesario para enviar el correo.		
+		// realiza lo necesario para enviar el correo.
 	}
 
 	@Override
 	public float tazaDeTransferencia() {
-		//no corresponde
+		// no corresponde
 		return 0;
 	}
 
 	@Override
 	public void resetear() {
-         //no corresponde		
+		// no corresponde
 	}
 
 	@Override
 	public void realizarBackUp() {
-		//no corresponde
-		
+		// no corresponde
+
 	}
 
 }

@@ -5,14 +5,27 @@ import java.util.ArrayList;
 public class Correo {
 	private String asunto;
 	private String destinatario;
+	private String usuario;
+	private String passUsuario;
 	private String cuerpo;
 	private ArrayList<Correo> inbox;
 	private ArrayList<Correo> borrados;
 
-	public Correo(String asunto, String destinatario, String cuerpo) {
+	public Correo(String asunto, String destinatario, String cuerpo, String usuario, String pass) {
 		this.setAsunto(asunto);
 		this.setDestinatario(destinatario);
 		this.setCuerpo(cuerpo);
+		this.setUsuario(usuario);
+		this.setPassUsuario(pass);
+		
+		
+	}
+
+	public Correo(String asunto, String destinatario, String cuerpo) {
+		
+		this.asunto = asunto;
+		this.destinatario = destinatario;
+		this.cuerpo = cuerpo;
 	}
 
 	public int contarBorrados() {
@@ -46,4 +59,22 @@ public class Correo {
 	public void setCuerpo(String cuerpo) {
 		this.cuerpo = cuerpo;
 	}
+
+	public String getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(String usuario) {
+		this.usuario = usuario;
+	}
+
+	public String getPassUsuario() {
+		return passUsuario;
+	}
+
+	public void setPassUsuario(String passUsuario) {
+		this.passUsuario = passUsuario;
+	}
+
+	
 }
