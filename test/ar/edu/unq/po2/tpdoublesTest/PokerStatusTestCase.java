@@ -19,22 +19,28 @@ class PokerStatusTestCase {
 
 	@Test
 	void testPoquer() {
-		assertTrue(poquer.verificar("10P","10D","10C","10T", "10D"));
-		assertFalse(poquer.verificar("2P","10D","4C","2T", "5D"));
+		String poker = poquer.verificar("10PN","10DR","10CA","10TV", "10DR");
+		assertEquals(poker,"Poquer");
+		
+		//assertFalse(poquer.verificar("2P","10D","4C","2T", "5D"));
 	}
 
-/*
+
 	@Test
 	void testColor() {
-		assertTrue(poquer.verificarColor("2PN","2DN","2CN","2TN", "5DN"));
-		assertFalse(poquer.verificarColor("2PN","10DR","4CR","2TA", "5DV"));
+		String color = poquer.verificar("10PN","2DN","5CN","4TN", "10DN");
+		assertEquals(color,"Color");
+		/*assertTrue(poquer.verificarColor("2PN","2DN","2CN","2TN", "5DN"));
+		assertFalse(poquer.verificarColor("2PN","10DR","4CR","2TA", "5DV"));*/
 	}
 	@Test
 	void testTrio() {
-		assertTrue(poquer.verificarTrio("2PN","2DN","2CN","2TN", "5DN"));
-		assertFalse(poquer.verificarTrio("2PN","10DR","4CR","2TA", "5DV"));
+		String trio = poquer.verificar("10PN","5DV","5CN","5TN", "10DN");
+		assertEquals(trio,"Trio");
+		/*assertTrue(poquer.verificarTrio("2PN","2DN","2CN","2TN", "5DN"));
+		assertFalse(poquer.verificarTrio("2PN","10DR","4CR","2TA", "5DV"));*/
 	}
 	
 	
-	*/
+	
 }

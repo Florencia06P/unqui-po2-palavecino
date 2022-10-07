@@ -4,10 +4,18 @@ package ar.edu.unq.po2.tpdoubles;
 
 public class PokerStatus  {
 
-	public Boolean verificar(String carta1, String carta2, String carta3, String carta4, String carta5) {
+	public String verificar(String carta1, String carta2, String carta3, String carta4, String carta5) {
 		
-		return this.esPoquer(carta1, carta2, carta3, carta4, carta5);
-		
+		if(this.esPoquer(carta1, carta2, carta3, carta4, carta5)) {
+		return "Poquer";
+		}
+		else if(this.esColor(carta1, carta2, carta3, carta4, carta5)) {
+			return "Color";
+		}
+		else if (this.esTrio(carta1, carta2, carta3, carta4, carta5)){
+			return "Trio";
+		}
+		else {return "Nada";}
 	
 
 }
@@ -42,7 +50,10 @@ private boolean esTrio(String carta1, String carta2, String carta3, String carta
 	 if(carta1.charAt(0) == carta2.charAt(0)&& 
 	    carta2.charAt(0)==carta3.charAt(0) ||
 	    carta3.charAt(0)== carta4.charAt(0) &&
-	    carta4.charAt(0) == carta5.charAt(0) )
+	    carta4.charAt(0) == carta5.charAt(0)||
+	    carta2.charAt(0)==carta3.charAt(0) &&
+	    carta3.charAt(0)== carta4.charAt(0)
+	    )
 	     { return true; }
 	 else {return false;}
 }
