@@ -1,6 +1,5 @@
 package ar.edu.unq.po2.tpdoubles;
 
-import java.util.function.BooleanSupplier;
 
 public class PokerStatus {
 
@@ -19,15 +18,12 @@ public class PokerStatus {
 	}
 
 	public boolean esPoquer(Carta carta1, Carta carta2, Carta carta3, Carta carta4, Carta carta5) {
-		if ((carta1.valor == carta2.valor && carta2.valor == carta3.valor && carta3.valor == carta4.valor)
+		return  ((carta1.valor == carta2.valor && carta2.valor == carta3.valor && carta3.valor == carta4.valor)
 				|| (carta2.valor == carta3.valor && carta3.valor == carta4.valor && carta4.valor == carta5.valor)
 				|| (carta1.valor == carta3.valor && carta3.valor == carta4.valor && carta4.valor == carta5.valor)
 				|| (carta1.valor == carta2.valor && carta2.valor == carta4.valor && carta4.valor == carta5.valor)
-				|| (carta1.valor == carta2.valor && carta2.valor == carta3.valor && carta3.valor == carta5.valor)) {
-			return true;
-		} else {
-			return false;
-		}
+				|| (carta1.valor == carta2.valor && carta2.valor == carta3.valor && carta3.valor == carta5.valor));
+		
 
 	}
 
@@ -40,12 +36,9 @@ public class PokerStatus {
 	 */
 
 	public boolean esColor(Carta carta1, Carta carta2, Carta carta3, Carta carta4, Carta carta5) {
-		if (carta1.palo == carta2.palo && carta2.palo == carta3.palo && carta3.palo == carta4.palo
-				&& carta4.palo == carta5.palo) {
-			return true;
-		} else {
-			return false;
-		}
+		return (carta1.palo == carta2.palo && carta2.palo == carta3.palo && carta3.palo == carta4.palo
+				&& carta4.palo == carta5.palo);
+		
 	}
 
 	/*
@@ -58,14 +51,11 @@ public class PokerStatus {
 
 	private boolean esTrio(Carta carta1, Carta carta2, Carta carta3, Carta carta4, Carta carta5) {
 
-		if ((carta1.valor == carta2.valor && carta2.valor == carta3.valor)
+		return (carta1.valor == carta2.valor && carta2.valor == carta3.valor)
 				|| (carta3.valor == carta4.valor && carta4.valor == carta5.valor)
 				|| (carta2.valor == carta3.valor && carta3.valor == carta4.valor)
-				|| (carta1.valor == carta2.valor && carta2.valor == carta4.valor)) {
-			return true;
-		} else {
-			return false;
-		}
+				|| (carta1.valor == carta2.valor && carta2.valor == carta4.valor);
+		
 	}
 
 	public boolean unaCartaEsSuperiorAOtra(Carta carta1, Carta carta2) {
