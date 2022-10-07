@@ -1,5 +1,7 @@
 package ar.edu.unq.po2.tpdoubles;
 
+import java.util.function.BooleanSupplier;
+
 public class PokerStatus {
 
 	public String verificar(Carta carta1, Carta carta2, Carta carta3, Carta carta4, Carta carta5) {
@@ -70,5 +72,12 @@ public class PokerStatus {
 		
 		return carta1.valor > carta2.valor;
 	}
+
+	public boolean sonDelMismoPalo(Carta carta1, Carta carta2) {
+		
+		return carta1.palo == carta2.palo;
+	}
+	
+	
 
 }

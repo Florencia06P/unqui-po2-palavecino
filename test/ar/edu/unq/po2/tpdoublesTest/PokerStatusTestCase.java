@@ -22,7 +22,7 @@ class PokerStatusTestCase {
 
 		poquer = new PokerStatus();
 		carta1 = new Carta(8, "D");
-		carta2 = new Carta(3, "T");
+		carta2 = new Carta(3, "D");
 		carta3 = new Carta(2, "P");
 		carta4 = new Carta(5, "T");
 		carta5 = new Carta(1, "T");
@@ -70,6 +70,10 @@ class PokerStatusTestCase {
 	@Test
 	void testUnaCartaEsSuperiorAOtra() {
 		assertTrue(poquer.unaCartaEsSuperiorAOtra(carta1, carta2));
+	}
+	@Test
+	void testSonDelMismoPalo() {
+		assertTrue(poquer.sonDelMismoPalo(carta1,carta2));
 	}
 
 }
