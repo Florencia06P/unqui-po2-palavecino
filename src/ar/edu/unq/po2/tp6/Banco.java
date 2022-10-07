@@ -26,7 +26,7 @@ public class Banco {
 
 		for (int i = 0; i < solicitudes.size(); i++) {
 			if (solicitudes.get(i).esAceptable()) {
-				montos.forEach(monto-> monto.sum()){
+				montos.forEach(monto-> monto.sum(){
 				
 					return montoTotal;
 				}
