@@ -49,7 +49,7 @@ public class PokerStatus {
 	 * }
 	 */
 
-	private boolean esTrio(Carta carta1, Carta carta2, Carta carta3, Carta carta4, Carta carta5) {
+	public boolean esTrio(Carta carta1, Carta carta2, Carta carta3, Carta carta4, Carta carta5) {
 
 		return (carta1.valor == carta2.valor && carta2.valor == carta3.valor)
 				|| (carta3.valor == carta4.valor && carta4.valor == carta5.valor)
