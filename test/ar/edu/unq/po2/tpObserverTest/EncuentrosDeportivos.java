@@ -1,6 +1,6 @@
 package ar.edu.unq.po2.tpObserverTest;
 
-import static org.junit.jupiter.api.Assertions.*;
+//import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.Arrays;
 import java.util.List;
@@ -12,12 +12,13 @@ import ar.edu.unq.po2.tpObserver.Contrincante;
 import ar.edu.unq.po2.tpObserver.Deporte;
 import ar.edu.unq.po2.tpObserver.IServidor;
 import ar.edu.unq.po2.tpObserver.Partido;
-
 import static org.mockito.Mockito.*;
+
 
 class EncuentrosDeportivos {
 
 	private IServidor servidor;
+	//private Servidor1 servidor;
 	private Partido partidoFutbol;
 	private Contrincante contrincante1;
 	private Contrincante contrincante2;
